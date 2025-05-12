@@ -21,9 +21,10 @@
     .overlay {
       position: fixed;
       inset: 0;
-      background: url('https://dmivolv.github.io/Aghanim/Aghanim_HQ_upscaled_sharpened.png') no-repeat center center;
+      background-image: url('https://dmivolv.github.io/Aghanim/1594806138614.png');
+      background-repeat: no-repeat;
+      background-position: center center;
       background-size: cover;
-      background-color: #000;
       z-index: -2;
     }
 
@@ -52,6 +53,13 @@
       width: 90%;
       max-width: 500px;
       z-index: 1;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        background: none;
+        box-shadow: none;
+      }
     }
 
     h1 {
