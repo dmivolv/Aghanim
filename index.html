@@ -5,9 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Турнир по Dota 2: Aghanim — Регистрация</title>
   <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
     html {
       position: relative;
-      min-height: 100%;
     }
 
     html::before {
@@ -30,19 +36,18 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.3);
       z-index: -1;
     }
 
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
       display: flex;
       align-items: center;
       justify-content: center;
       color: #ffffff;
       min-height: 100vh;
+      overflow-x: hidden;
     }
 
     .container {
