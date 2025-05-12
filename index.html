@@ -20,11 +20,8 @@
 
     .overlay {
       position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: url('https://dmivolv.github.io/Aghanim/aghanim_background_1920x1080_cropped.jpg') no-repeat center center fixed;
+      inset: 0;
+      background: url('https://dmivolv.github.io/Aghanim/Aghanim_HQ_upscaled_sharpened.png') no-repeat center center;
       background-size: cover;
       background-color: #000;
       z-index: -2;
@@ -33,10 +30,7 @@
     .overlay::after {
       content: "";
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      inset: 0;
       background: rgba(0, 0, 0, 0.3);
       z-index: -1;
     }
@@ -47,6 +41,7 @@
       justify-content: center;
       color: #ffffff;
       position: relative;
+      min-height: 100vh;
     }
 
     .container {
