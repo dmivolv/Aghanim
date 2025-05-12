@@ -6,10 +6,32 @@
   <title>Турнир по Dota 2: Aghanim — Регистрация</title>
   <style>
     html {
-      background: url('https://cdna.artstation.com/p/assets/images/images/000/749/738/large/darth-necrus-agh-s-10.jpg?1432180916') no-repeat center center fixed;
+      position: relative;
+      min-height: 100%;
+    }
+
+    html::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('https://dmivolv.github.io/Aghanim/1234123.png') no-repeat center center fixed;
       background-size: cover;
       background-color: #000;
-      min-height: 100%;
+      z-index: -2;
+    }
+
+    html::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: -1;
     }
 
     body {
